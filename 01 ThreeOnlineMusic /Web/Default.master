@@ -1,0 +1,170 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<title>-Online Music-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="Desciption" content="This web design site is a very good site with wonderful web design resources">
+<meta name="keywords" content="This,web,design,site,is,a,very,good,site,with,wonderful,web,design,resources">
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<style>
+#left{  
+float:left;
+margin-left:20px;
+width:650px;
+height:700px;
+border: solid 1px #000000;
+
+  }
+
+#right{ 
+position:relative;
+float:right;
+width:320px;
+height:700px;
+border: solid 1px #000000;
+  }
+
+</style>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+<center>
+<div class="wrapper">
+<div class="header">
+<div style="float:left; margin-left:110px; margin-top:20px;">
+<img src="images/logo.jpg" style="float:left;">
+<div style="float:left;  text-align:left; font-family:tahoma; font-size:24pt; color:#636363; margin-left:5px;margin-top:5px;">Online <b>Music</b><br><span style="float:left;  text-align:left; font-family:tahoma; font-size:8pt; color:#b1b1b1;"><b>&nbsp;</b></span>
+</div>
+
+</div>
+
+<div style="float:right; margin-right:30px; margin-top:50px; text-align:left; font-family:tahoma; font-size:11pt; color:#636363;"><b> Online music sharing platform</b><br><span style="float:left;  text-align:left; font-family:tahoma; font-size:8pt; color:#b1b1b1;"><b>&nbsp;</b></span>
+</div>
+
+</div>
+<div class="menu">
+<div class="menu-text" style="padding-left:140px;padding-right:50px;"><a href="Default.aspx"class="nav">Index</a></div>
+<div class="menu-text"><a href="PopMusic.aspx"class="nav">Pop Music</a></div>
+<div class="menu-text"><a href="RockMusic.aspx" class="nav">Rock Music</a></div>
+<div class="menu-text" style="padding-right:30px;"><a href="OldMusic.aspx" class="nav">Classic Music</a></div>
+<div class="menu-text"><a href="JazzMusic.aspx" class="nav">Jazz Music</a></div>
+
+<%--<div style="float:right; padding-right:25px;padding-top:12px;">
+<input type="image" src="images/go.jpg" visible="false" />
+</div>
+<div style="float:right;padding-right:8px;padding-top:14px;">
+<input style="border:none; height:18px;width:130px;" type="text" name="search_box" visible="false" />
+</div>--%>
+
+</div>
+
+<div class="first-section">
+<div id="left">
+  <table width="626" height="606" border="0">
+    <tr>
+      <td width="304" height="340" align="left" valign="top"><p><img src="images/1.jpg" 
+              width="298" height="29" border="0" usemap="#Map"></p>
+         <div style="width:299px;height:240px;">
+         <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+        </div>
+        <p>&nbsp;</p></td>
+      <td width="320" align="left" valign="top"><p><img src="images/2.jpg" width="291" height="29" border="0" usemap="#Map2"></p>
+        
+         <div style="width:299px;height:240px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+      
+        </asp:ContentPlaceHolder>
+       </div>
+        
+        </p></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top"><p><img src="images/3.jpg" width="291" height="29" border="0" usemap="#Map3"></p>
+        
+        
+        <div style="width:299px;height:240px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder4" runat="server">
+       
+        </asp:ContentPlaceHolder>
+       </div>
+       
+       
+       </p>
+        <p>&nbsp;</p>        </td>
+      <td align="left" valign="top"><p><img src="images/4.jpg" width="291" height="29" border="0" usemap="#Map4"></p>
+       
+       
+       
+       
+       
+       <div style="width:299px;height:240px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder5" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       </div>
+       
+       
+       </td>
+    </tr>
+  </table>
+</div>
+
+
+<div id="right">
+  <table width="322" height="606" border="1">
+    <tr>
+      <td height="336" align="left" valign="top"><p><img src="images/6.jpg" width="317" height="30"></p>
+       
+       
+       
+        <div style="width:299px;height:240px;">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder6" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       </div>
+       
+       
+       &nbsp;</p></td>
+    </tr>
+    <tr>
+      <td height="352" align="center" valign="top"><p><img src="images/music.gif" 
+              height="350" style="width: 288px"></p>
+        </td>
+    </tr>
+  </table>
+</div>
+<br width="100%"/>
+<div class="footer">
+<a title="Web Templates" href="#"></a></div>
+</div>
+
+<map name="Map"><area shape="rect" coords="228,8,289,24" href="PopMusic.aspx"></map>
+<map name="Map2"><area shape="rect" coords="217,7,290,27" href="RockMusic.aspx"></map>
+<map name="Map3"><area shape="rect" coords="226,6,283,27" href="OldMusic.aspx"></map>
+<map name="Map4"><area shape="rect" coords="226,8,289,29" href="JazzMusic.aspx"></map>
+
+    </div>
+    </form>
+    
+    
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&amp;img=7&amp;pos=right&amp;uid=6627698" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+</script>
+<!-- Baidu Button END -->
+
+</body>
+</html>
